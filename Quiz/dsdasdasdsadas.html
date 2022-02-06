@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tamplate Web Site</title>
+ <meta name="viewport" content="width=device-width, initial-scale=0.8">
+ 
+    <style>
+        body{margin: 0;}
+ 
+       
+ 
+      /* navigation bar */
+       
+ 
+         #container{
+             display: flex;
+             flex-wrap: wrap;
+         }
+ 
+         /* 왼쪽 사이드 */
+         aside{
+             flex-grow: 2;
+             background-color: white;
+             padding: 20px;
+         }
+         article{
+             flex: 8;
+             background-color: white;
+             padding:32px;
+         }
+ 
+       
+ 
+         /* 반응형 웹 */
+         @media all and (max-width: 600px){
+            #container, nav{
+                flex-direction: column;
+            }
+         }
+ 
+    </style>
+ 
+</head>
+<body>
+    <!-- notice 영역 -->
+    <div style="background-color: #67DA89; padding: 5px;">
+        <h4 style="text-align: center;">문제를 입력해주세요</h4>
+    </div>
+ 
+    
+   
+ 
+    <!-- 콘텐츠 영역 -->
+    <div id="container">
+        <!-- 왼쪽 사이드 -->
+        <aside>
+            <div style="border: 1px solid white; width:500px; height: 725px; text-align: center; line-height: 725px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/842/842858.png" style="width:400px; height:500px; vertical-align: middle;">
+          </div>
+         
+ 
+        </aside>
+        <!-- 본문 영역 -->
+        <article>
+             <h4>정답을 선택해주세요</h4>
+            <body>  
+            <table border="1" width="700" height="530">
+            <tr>
+            <td><center>1번보기</center></td>
+            <td><center>2번보기</center></td>
+            </tr>
+            <tr>
+            <td><center>3번보기</center></td>
+            <td><center>4번보기</center></td>
+            </tr>
+            </table>
+            </body>
+        </article>
+ 
+    </div>
+ 
+   
+ 
+</body>
+</html>
