@@ -1,0 +1,100 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  border-bottom: 1px gray solid;
+}
+.img {
+  text-align: center;
+}
+.text {
+  height: 100vh;
+  background-color: rgb(103, 218, 137);
+}
+body {
+  margin: 0;
+}
+.textIn {
+  padding: 10em;
+  padding-top: 15em;
+}
+.treeHeight {
+  font-size: 100px;
+}
+.tip {
+  font-size: 35px;
+}
+.todayInfo {
+  font-size: 25px;
+}
+.treeImg {
+  height: 100vh;
+  width: auto;
+  text-align: center;
+}
+.reCont {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 50vh;
+  border-bottom: gray 1px solid;
+}
+.reImg {
+  height: 50vh;
+  background-color: rgb(0, 170, 26);
+}
+.reT {
+  font-size: 50px;
+}
+.reText {
+  margin-left: 9em;
+  margin-top: 13em;
+}
+.reA {
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+}
+.reP {
+  margin-bottom: 40px;
+}
+.qCont {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 50vh;
+}
+.qText {
+  margin-left: 9em;
+  margin-top: 13em;
+}
+.qImgs {
+  text-align: center;
+  background-color: rgb(103, 218, 137);
+  padding-top: 7em;
+}
+@media (max-width: 1600px) {
+  .treeHeight {
+    font-size: 70px;
+  }
+  .todayInfo {
+    font-size: 20px;
+  }
+  .tip {
+    font-size: 30px;
+  }
+}
+@media (max-height: 760px) {
+  .textIn {
+    padding: 7em;
+    padding-top: 10em;
+  }
+  .reText {
+    margin-left: 9em;
+    margin-top: 7em;
+  }
+  .qText {
+    margin-left: 9em;
+    margin-top: 7em;
+  }
+}
