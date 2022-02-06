@@ -1,8 +1,22 @@
+@keyframes slidein {
+  from {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 9em;
+    opacity: 100%;
+  }
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   border-bottom: 1px gray solid;
+}
+.mq, .mre {
+  display: none;
 }
 .img {
   text-align: center;
@@ -35,7 +49,7 @@ body {
 .reCont {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  height: 50vh;
+  height: 50%;
   border-bottom: gray 1px solid;
 }
 .reImg {
@@ -56,13 +70,22 @@ body {
   color: black;
   text-decoration: none;
 }
+.reA:hover {
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
 .reP {
   margin-bottom: 40px;
 }
 .qCont {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 50vh;
+  height: 50%;
 }
 .qText {
   margin-left: 9em;
@@ -71,9 +94,15 @@ body {
 .qImgs {
   text-align: center;
   background-color: rgb(103, 218, 137);
-  padding-top: 7em;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 1600px) {
+.qImg {
+  height: 50%;
+}
+@media (max-width: 1600px) and (min-width:1100px) {
   .treeHeight {
     font-size: 70px;
   }
@@ -87,14 +116,74 @@ body {
 @media (max-height: 760px) {
   .textIn {
     padding: 7em;
-    padding-top: 10em;
+    padding-top: 8em;
   }
   .reText {
     margin-left: 9em;
-    margin-top: 7em;
+    margin-top: 5em;
   }
   .qText {
     margin-left: 9em;
-    margin-top: 7em;
+    margin-top: 5em;
+  }
+}
+@media (max-width: 1099px) {
+  .textIn {
+    padding: 5em;
+    padding-top: 3em;
+  }
+  .treeHeight {
+    font-size: 70px;
+  }
+  .todayInfo {
+    font-size: 20px;
+  }
+  .tip {
+    font-size: 30px;
+  }
+}
+@media (max-width: 770px) {
+  .qCont {
+    display: none;
+  }
+  .reCont {
+    display: none;
+  }
+  .container {
+    display: block;
+  }
+  .text {
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(103, 218, 137);
+  }
+  .tip {
+    display: none;
+  }
+  .todayInfo {
+    display: none;
+  }
+  .treeImg {
+    height: 80vh;
+    width: auto;
+    text-align: center;
+  }
+  .textIn {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    
+  }
+  .treeHeight {
+    font-size: 50px;
+    margin: 0;
+  }
+  .mq, .mre {
+    display: inline;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
   }
 }
